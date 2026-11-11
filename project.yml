@@ -1,27 +1,27 @@
-# XcodeGen spec: CI generates Plantekalender.xcodeproj from this, so no .pbxproj is checked in.
-name: Plantekalender
+# XcodeGen spec: CI generates HarvestBuddy.xcodeproj from this, so no .pbxproj is checked in.
+name: HarvestBuddy
 options:
   bundleIdPrefix: dk.cmaintz
   deploymentTarget:
     iOS: "17.0"
 packages:
-  PlantekalenderKit:
+  HarvestBuddyKit:
     path: .
 targets:
-  Plantekalender:
+  HarvestBuddy:
     type: application
     platform: iOS
     sources: [App]
     scheme: {}
     dependencies:
-      - package: PlantekalenderKit
+      - package: HarvestBuddyKit
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: dk.cmaintz.plantekalender
+        PRODUCT_BUNDLE_IDENTIFIER: dk.cmaintz.harvestbuddy
         SWIFT_VERSION: "6.0"
         GENERATE_INFOPLIST_FILE: YES
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
-        INFOPLIST_KEY_CFBundleDisplayName: Plantekalender
+        INFOPLIST_KEY_CFBundleDisplayName: Harvest Buddy
         MARKETING_VERSION: "0.1.0"
         CURRENT_PROJECT_VERSION: "1"
       configs:
@@ -30,7 +30,7 @@ targets:
         Debug:
           API_BASE_URL: "http://localhost:5173"
         Release:
-          API_BASE_URL: "https://plantekalender.cmaintz-site.workers.dev"
+          API_BASE_URL: "https://harvestbuddy.cmaintz-site.workers.dev"
     info:
       path: App/Info.plist
       properties:

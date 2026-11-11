@@ -13,7 +13,7 @@ public, så CI kan bygge på macOS uden at bruge betalte minutter.
 - **Tynd klient** med samme omfang som Android-appens første version: log ind eller opret konto,
   opgavetavlen med udført/udsæt/ikke relevant/fortryd og frostvarsler, havens bede med plantning
   via plantevælger, og høstregistrering. Resten bliver i webappen indtil videre.
-- **`PlantekalenderKit`** er en Swift-pakke uden UIKit og SwiftUI: modeller, API-klient og view
+- **`HarvestBuddyKit`** er en Swift-pakke uden UIKit og SwiftUI: modeller, API-klient og view
   models (`@Observable`). Den bygger og testes med `swift test` på enhver platform med Swift 6.
   HTTP går gennem et `HTTPClient`-protokol, så klienten testes uden server.
 - **Appen** i `App/` er SwiftUI og genereres som Xcode-projekt med XcodeGen fra `project.yml`.

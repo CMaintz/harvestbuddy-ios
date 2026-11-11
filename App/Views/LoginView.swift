@@ -1,4 +1,4 @@
-import PlantekalenderKit
+import HarvestBuddyKit
 import SwiftUI
 
 struct LoginView: View {
@@ -28,6 +28,6 @@ struct LoginView: View {
                 model.registering.toggle()
             }
         }
-        .navigationTitle("Plantekalender")
+        .navigationTitle("Harvest Buddy")
     }
 }

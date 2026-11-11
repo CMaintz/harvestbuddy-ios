@@ -1,5 +1,5 @@
 # Foundry verb interface for a Swift package plus a SwiftUI app. See CMaintz/foundry CONTRACT.md.
-# The verbs cover PlantekalenderKit (models, API client, view models), which builds and tests on
+# The verbs cover HarvestBuddyKit (models, API client, view models), which builds and tests on
 # any platform with a Swift 6 toolchain; the app target needs Xcode and is built by `app:build`.
 
 [tools]
@@ -18,7 +18,7 @@ description = "Compilation is Swift's type check, tests included"
 run = "swift build --build-tests"
 
 [tasks.test]
-description = "PlantekalenderKit tests: the API client against a recording client, view models against a fake API"
+description = "HarvestBuddyKit tests: the API client against a recording client, view models against a fake API"
 run = "swift test"
 
 [tasks.audit]
@@ -30,7 +30,7 @@ run = "if [ -f Package.resolved ]; then osv-scanner scan source --lockfile=Packa
 description = "Generate the Xcode project and build the app for the simulator (macOS with Xcode only)"
 run = [
     "xcodegen generate --quiet",
-    "xcodebuild -project Plantekalender.xcodeproj -scheme Plantekalender -destination 'generic/platform=iOS Simulator' -quiet build CODE_SIGNING_ALLOWED=NO",
+    "xcodebuild -project HarvestBuddy.xcodeproj -scheme HarvestBuddy -destination 'generic/platform=iOS Simulator' -quiet build CODE_SIGNING_ALLOWED=NO",
 ]
 
 [tasks.gate]
