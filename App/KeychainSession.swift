@@ -1,6 +1,6 @@
 import Foundation
 import Observation
-import PlantekalenderKit
+import HarvestBuddyKit
 import Security
 
 /// Keeps the session token in the Keychain, readable only on this device while it is unlocked,
@@ -17,7 +17,7 @@ final class KeychainSession: SessionStore {
 
     private let query: [String: Any] = [
         kSecClass as String: kSecClassGenericPassword,
-        kSecAttrService as String: "dk.cmaintz.plantekalender",
+        kSecAttrService as String: "dk.cmaintz.harvestbuddy",
         kSecAttrAccount as String: "session",
     ]
 

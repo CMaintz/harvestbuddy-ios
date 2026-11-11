@@ -1,6 +1,6 @@
-# plantekalender-ios
+# harvestbuddy-ios
 
-Native iOS-app (Swift, SwiftUI) til Plantekalender. Al forretningslogik ligger i Plantekalenders
+Native iOS-app (Swift, SwiftUI) til Harvest Buddy. Al forretningslogik ligger i Harvest Buddys
 API, som appen kun læser og skriver; appen er en tynd klient.
 Beslutninger i `docs/adr/`. Repoet er public: intet herinde må afhænge af eller beskrive
 private repos' interne forhold.
@@ -12,9 +12,9 @@ red. `mise run app:build` genererer Xcode-projektet og bygger appen (kræver mac
 
 ## Layout
 
-- `Sources/PlantekalenderKit/` modeller, API-protokoller og `HTTPAPI`, view models i `Models/`.
+- `Sources/HarvestBuddyKit/` modeller, API-protokoller og `HTTPAPI`, view models i `Models/`.
   Ingen UIKit/SwiftUI her, så pakken kan testes uden for Xcode.
-- `Tests/PlantekalenderKitTests/` XCTest mod en optagende HTTP-klient og en falsk API.
+- `Tests/HarvestBuddyKitTests/` XCTest mod en optagende HTTP-klient og en falsk API.
 - `App/` SwiftUI-appen, Keychain-sessionen og visninger i `Views/`. `project.yml` er XcodeGen-spec.
 
 ## Conventions

@@ -1,4 +1,4 @@
-import PlantekalenderKit
+import HarvestBuddyKit
 import SwiftUI
 
 struct SignedInView: View {

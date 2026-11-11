@@ -1,6 +1,6 @@
 import Foundation
 
-// The JSON shapes of the Plantekalender API. Enum-like values (status, bucket,
+// The JSON shapes of the Harvest Buddy API. Enum-like values (status, bucket,
 // activity, unit) stay strings: a server that adds a value must not break an app that is not
 // updated yet. Optional fields are optional here too, and unknown keys are ignored by Codable.
 

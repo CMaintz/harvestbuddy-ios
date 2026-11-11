@@ -1,6 +1,6 @@
 import Foundation
 
-// The slice of the Plantekalender API the app uses, one protocol per area, so a view model
+// The slice of the Harvest Buddy API the app uses, one protocol per area, so a view model
 // depends on only what it calls and a test fakes only that.
 
 public protocol AuthAPI: Sendable {
@@ -31,7 +31,7 @@ public protocol HarvestAPI: Sendable {
     func deleteHarvest(gardenId: String, harvestId: String) async throws
 }
 
-public typealias PlantekalenderAPI = AuthAPI & GardenAPI & BoardAPI & HarvestAPI
+public typealias HarvestBuddyAPI = AuthAPI & GardenAPI & BoardAPI & HarvestAPI
 
 /// An error response from the API; `code` is the `error` field, e.g. `invalid_credentials`.
 public struct APIError: Error, Equatable {

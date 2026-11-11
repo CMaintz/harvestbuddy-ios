@@ -1,9 +1,9 @@
 import Foundation
 import XCTest
-@testable import PlantekalenderKit
+@testable import HarvestBuddyKit
 
 /// An in-memory API that records writes, for view model tests.
-final class FakeAPI: PlantekalenderAPI, @unchecked Sendable {
+final class FakeAPI: HarvestBuddyAPI, @unchecked Sendable {
     var board: [BoardTask] = []
     var items: [Item] = []
     var harvestList: [Harvest] = []

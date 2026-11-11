@@ -9,7 +9,7 @@ public protocol HTTPClient: Sendable {
 }
 
 /// The API over HTTP. `token` is read on every request, so signing in or out takes effect at once.
-public struct HTTPAPI: PlantekalenderAPI {
+public struct HTTPAPI: HarvestBuddyAPI {
     let baseURL: URL
     let token: @Sendable () -> String?
     let client: HTTPClient

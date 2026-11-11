@@ -3,7 +3,7 @@ import Foundation
     import FoundationNetworking
 #endif
 import XCTest
-@testable import PlantekalenderKit
+@testable import HarvestBuddyKit
 
 /// Records requests and answers each with a canned status and body.
 final class RecordingClient: HTTPClient, @unchecked Sendable {

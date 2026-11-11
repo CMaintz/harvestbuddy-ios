@@ -1,8 +1,8 @@
-import PlantekalenderKit
+import HarvestBuddyKit
 import SwiftUI
 
 @main
-struct PlantekalenderApp: App {
+struct HarvestBuddyApp: App {
     @State private var session: KeychainSession
     private let api: HTTPAPI
 

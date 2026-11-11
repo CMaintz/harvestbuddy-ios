@@ -46,7 +46,7 @@ public final class BoardModel {
             let alerts = (try? await api.alerts(gardenId: gardenId)) ?? []
             guard tickets.isCurrent(ticket) else { return }
             self.alerts = alerts
-            sections = PlantekalenderKit.sections(board)
+            sections = HarvestBuddyKit.sections(board)
             finished = board.filter { finishedBuckets.contains($0.bucket) }
         }
         guard tickets.isCurrent(ticket) else { return }

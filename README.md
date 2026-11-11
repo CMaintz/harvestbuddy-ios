@@ -1,6 +1,6 @@
-# Plantekalender til iOS
+# Harvest Buddy til iOS
 
-Native iOS-app til [Plantekalender](https://plantekalender.cmaintz-site.workers.dev): opgaver,
+Native iOS-app til [Harvest Buddy](https://harvestbuddy.cmaintz-site.workers.dev): opgaver,
 frostvarsler, haven og høst.
 
 - `swift test` kører pakkens tests.
